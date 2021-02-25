@@ -1,6 +1,6 @@
 // This is the Abstract class with the mixed duplicates from the ArrayList and LinkedList
 
-public class MixedAb {
+public class AbstractList {
 
 	// post: returns the current number of elements in the list
 	public int size() {
