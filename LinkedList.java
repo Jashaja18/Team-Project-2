@@ -145,6 +145,7 @@ public class LinkedList<E> implements List<E> {
         return current;
     }
 
+    /**
     // post: throws an IndexOutOfBoundsException if the given index is
     //       not a legal index of the current list
     private void checkIndex(int index) {
@@ -152,6 +153,7 @@ public class LinkedList<E> implements List<E> {
             throw new IndexOutOfBoundsException("index: " + index);
         }
     }
+     */
 
     private static class ListNode<E> {
         public E data;         // data stored in this node
@@ -164,7 +166,7 @@ public class LinkedList<E> implements List<E> {
             this.next = next;
             this.prev = prev;
         }
-		
+
         // post: constructs a node with given data and null links
         public ListNode(E data) {
             this(data, null, null);
