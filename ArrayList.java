@@ -2,7 +2,8 @@
 
 import java.util.*;
 
-public class ArrayList<E> implements List<E> {
+class ArrayList<E> implements List<E>
+{
     private E[] elementData; // list of values
     private int size;        // current number of elements in the list
 
@@ -144,6 +145,7 @@ public class ArrayList<E> implements List<E> {
         }
     }
 
+    /**
     // post: throws an IndexOutOfBoundsException if the given index is
     //       not a legal index of the current list
     private void checkIndex(int index) {
@@ -151,6 +153,7 @@ public class ArrayList<E> implements List<E> {
             throw new IndexOutOfBoundsException("index: " + index);
         }
     }
+     */
 
     private class ArrayListIterator implements Iterator<E> {
         private int position;           // current position within the list
@@ -190,5 +193,15 @@ public class ArrayList<E> implements List<E> {
             position--;
             removeOK = false;
         }
+
+        /**
+        // post: throws an IndexOutOfBoundsException if the given index is
+        //       not a legal index of the current list
+        private void checkIndex(int index)
+        {
+            if (index < 0 || index >= size) {
+                throw new IndexOutOfBoundsException("index: " + index);
+            }
+        }*/
     }
 }
