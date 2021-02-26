@@ -14,4 +14,3 @@
 	    public void set(int index, E value);
 	    public void clear();
 	}
-}
