@@ -18,14 +18,6 @@ public abstract class AbstractList<E> implements List<E>
         return size;
     }
 
-    // pre : 0 <= index < size() (throws IndexOutOfBoundsException if not)
-    // post: returns the value at the given index in the list
-    public E get(int index)
-    {
-        checkIndex(index);
-        return elementData[index];
-    }
-
     // post: returns true if list is empty, false otherwise
     public boolean isEmpty()
     {
