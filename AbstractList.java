@@ -6,7 +6,9 @@
  */
 // This is the Abstract class with the mixed duplicates from the ArrayList and LinkedList
 
-abstract public class AbstractList<E>
+import java.util.*;
+
+public abstract class AbstractList<E> implements List<E>
 {
     private int size;        // current number of elements in the list
     private E[] elementData; // list of values
@@ -37,6 +39,15 @@ abstract public class AbstractList<E>
     {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("index: " + index);
+        }
+    }
+    
+    // post: list is empty
+    public void clear() {
+        Iterator<E> itrE = this.iterator();
+        while(itrE.hasNext()) {
+                itrE.next():
+                itrE.remove();
         }
     }
 }
