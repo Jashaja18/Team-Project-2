@@ -114,11 +114,11 @@ public class LinkedList<E> implements List<E> {
     }
 
     // post: list is empty
-    public void clear() {
+   /* public void clear() {
         front.next = back;
         back.prev = front;
         size = 0;
-    }
+    }*/
 
     // post: returns an iterator for this list
     public Iterator<E> iterator() {
