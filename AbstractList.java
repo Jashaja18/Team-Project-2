@@ -41,22 +41,6 @@ public abstract class AbstractList<E> implements List<E>
         return indexOf(value) >= 0;
     }
     
-    // pre : 0 <= index < size() (throws IndexOutOfBoundsException if not)
-    // post: replaces the value at the given index with the given value
-    public void set(int index, E value) 
-    {
-        checkIndex(index);
-    }
-    
-    // post: appends all values in the given list to the end of this list
-    public void addAll(List<E> other) 
-    {
-        for (E value: other) 
-        {
-            add(value);
-        }
-    }
-    
     // post: list is empty
     // Jashanpreet Jandu
     public void clear() 
