@@ -42,7 +42,7 @@ public abstract class AbstractList<E> implements List<E>
     }
     
     // post: list is empty
-    // Jashanpreet Jandu
+    // Jashanpreet
     public void clear() 
     {
         Iterator<E> itrE = this.iterator();
