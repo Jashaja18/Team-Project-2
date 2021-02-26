@@ -28,7 +28,7 @@ public abstract class AbstractList<E> implements List<E>
     //       not a legal index of the current list
     private void checkIndex(int index)
     {
-        if (index < 0 || index >= size) 
+        if (index < 0 || index >= size()) 
         {
             throw new IndexOutOfBoundsException("index: " + index);
         }
@@ -41,6 +41,13 @@ public abstract class AbstractList<E> implements List<E>
         return indexOf(value) >= 0;
     }
     
+    // post: appends the given value to the end of the list
+    // Jashanpreet
+    public void add(E value) 
+    {
+        add(size, value);
+    }
+   
     // post: list is empty
     // Jashanpreet
     public void clear() 
@@ -52,4 +59,3 @@ public abstract class AbstractList<E> implements List<E>
              itrE.remove();
         }
     }
-}
