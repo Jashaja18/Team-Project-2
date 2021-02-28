@@ -28,7 +28,7 @@ public abstract class AbstractList<E> implements List<E>
 
 	// post: throws an IndexOutOfBoundsException if the given index is
 	//       not a legal index of the current list
-	private void checkIndex(int index)
+	public void checkIndex(int index)
 	{
 		if (index < 0 || index >= size()) 
 		{
@@ -91,6 +91,8 @@ public abstract class AbstractList<E> implements List<E>
 	// Jashanpreet
 	public E get(int index)
 	{
+		checkIndex(index);
+		
 		Iterator<E> list = iterator();
 		E num = null;
 		for(int i = 0; i < index; i++) 
@@ -101,7 +103,6 @@ public abstract class AbstractList<E> implements List<E>
 		return num;
 	}
 	
-	// Jashanpreet
 	public void remove(int index) 
 	{
 		Iterator<E> iter = this.iterator();
@@ -117,5 +118,16 @@ public abstract class AbstractList<E> implements List<E>
 		}
 	}
 	
+	public int indexOf(E value)
+	{
+		int index = -1;
+		return index;
+	}
+	
+	public void set(int index, E value) 
+	{
+		
+	}
+
 	public abstract Iterator<E> iterator();
 }
