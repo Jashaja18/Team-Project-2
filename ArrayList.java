@@ -30,12 +30,12 @@ public class ArrayList<E> extends AbstractList<E>
 		return size;
 	}*/
 
-	/* pre : 0 <= index < size() (throws IndexOutOfBoundsException if not)
+	// pre : 0 <= index < size() (throws IndexOutOfBoundsException if not)
 	// post: returns the value at the given index in the list
 	public E get(int index) {
 		checkIndex(index);
 		return elementData[index];
-	}*/
+	}
 
 	/* post: creates a comma-separated, bracketed version of the list
 	public String toString() {
@@ -73,12 +73,12 @@ public class ArrayList<E> extends AbstractList<E>
 		return indexOf(value) >= 0;
 	}*/
 
-	/* post: appends the given value to the end of the list
+	// post: appends the given value to the end of the list
 	public void add(E value) {
 		ensureCapacity(size + 1);
 		elementData[size] = value;
 		size++;
-	}*/
+	}
 
 	// pre : 0 <= index <= size() (throws IndexOutOfBoundsException if not)
 	// post: inserts the given value at the given index, shifting subsequent
