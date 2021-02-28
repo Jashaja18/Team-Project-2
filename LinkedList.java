@@ -2,7 +2,8 @@
 
 import java.util.*;
 
-public class LinkedList<E> extends AbstractList<E> {
+public class LinkedList<E> extends AbstractList<E> 
+{
 	private ListNode<E> front;  // first value in the list
 	private ListNode<E> back;   // last value in the list
 	// private int size;           // current number of elements
@@ -69,10 +70,10 @@ public class LinkedList<E> extends AbstractList<E> {
 		return indexOf(value) >= 0;
 	}*/
 
-	/* post: appends the given value to the end of the list
+	// post: appends the given value to the end of the list
 	public void add(E value) {
 		add(size, value);
-	}*/
+	}
 
 	// pre: 0 <= index <= size() (throws IndexOutOfBoundsException if not)
 	// post: inserts the given value at the given index, shifting subsequent
