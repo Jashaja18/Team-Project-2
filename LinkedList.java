@@ -1,4 +1,11 @@
-//Class LinkedList<E> can be used to store a list of values of type E.
+
+/*
+ * Group 4
+ * Mar 1 2021
+ * CS 211
+ * Team Project 2
+ * Class LinkedList<E> can be used to store a list of values of type E
+ */
 
 import java.util.*;
 

@@ -1,4 +1,12 @@
 
+/*
+ * Group 4
+ * Mar 1 2021
+ * CS 211
+ * Team Project 2
+ * Client class to test project
+ */
+
 public class ListClient {
     public static void main(String[] args) {
     	

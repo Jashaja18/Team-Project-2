@@ -1,11 +1,11 @@
-/**
- * Thais snd Jashanpreet
- * Feb 23 2021
+
+/*
+ * Group 4
+ * Mar 1 2021
  * CS 211
  * Team Project 2
+ * This is the Abstract class with the mixed duplicates from the ArrayList and LinkedList
  */
-
-//This is the Abstract class with the mixed duplicates from the ArrayList and LinkedList
 
 import java.util.*;
 
