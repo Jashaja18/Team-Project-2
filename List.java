@@ -1,8 +1,5 @@
-/*
- * Group 4
- * Mar 1 2021
- * CS 211
- * Team Project 2
+/* Group #4, CS211, 3/1/21, Team Project #2
+ * Jashanpreet, Thais, Shreya, Brandon, Doris, Ace
  * Generic interface for a List of E objects
  */
 
