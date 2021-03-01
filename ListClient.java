@@ -10,7 +10,7 @@ public class ListClient {
 	
     public static void main(String[] args) {
     	
-    	// test Arraylist for addAll()
+    	// test ArrayList for addAll()
     	
     	// ArrayList testing
         ArrayList<Integer> testArray = new ArrayList<Integer>();
@@ -23,7 +23,7 @@ public class ListClient {
         testArray.add(324);
         testArray.add(342);
 
-        System.out.println("******Arraylist******");
+        System.out.println("******ArrayList******");
         System.out.println();
         testList(testArray);
         
