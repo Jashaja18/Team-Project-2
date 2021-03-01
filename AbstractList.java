@@ -75,6 +75,12 @@ public abstract class AbstractList<E> implements List<E>
 		
 	}
 	
+	public void addAll(List<E> other) {
+		for (E value: other) {
+			add(value);
+		}
+	}
+	
 	// post: list is empty
 	// Jashanpreet
 	public void clear() 
