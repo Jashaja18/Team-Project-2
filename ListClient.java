@@ -1,9 +1,6 @@
-/*
- * Group 4
- * Mar 1 2021
- * CS 211
- * Team Project 2
- * Client class to test project
+/* Group #4, CS211, 3/1/21, Team Project #2
+ * Jashanpreet, Thais, Shreya, Brandon, Doris, Ace
+ * Client code to test project and its outputs
  */
 
 public class ListClient {
@@ -24,7 +21,7 @@ public class ListClient {
         testArray.add(342);
 
         System.out.println("******ArrayList******");
-        System.out.println();
+        System.out.println(); // empty print statement to add a space between the outputs
         testList(testArray);
         
         // LinkedList testing
@@ -61,6 +58,7 @@ public class ListClient {
         System.out.println("Test List (after clear()): " + test);
         
         ArrayList<Integer> temp = new ArrayList<Integer>();
+        
         temp.add(1);
         temp.add(2);
         temp.add(3);
