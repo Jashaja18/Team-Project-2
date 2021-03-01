@@ -10,6 +10,9 @@
 public class ListClient {
     public static void main(String[] args) {
     	
+    	// test arraylist for addAll()
+    	
+    	
     	// ArrayList testing
         ArrayList<Integer> testArray = new ArrayList<Integer>();
      // add random numbers
@@ -54,8 +57,16 @@ public class ListClient {
         
         test.clear();
         System.out.println("Test List (after clear()): " + test);
+        
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        temp.add(1);
+        temp.add(2);
+        temp.add(3);
+        test.addAll(temp);
+        System.out.println("temp: " + temp);
+        System.out.println("Test List (after addAll(temp)): " + test);
+        
         System.out.println();
     }
-
 
 }
