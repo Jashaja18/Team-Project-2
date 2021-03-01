@@ -1,4 +1,3 @@
-
 /*
  * Group 4
  * Mar 1 2021
@@ -7,7 +6,8 @@
  * Generic interface for a List of E objects
  */
 
-public interface List<E> extends Iterable<E> {
+public interface List<E> extends Iterable<E> 
+{
 	public int size();
 	public E get(int index);
 	public int indexOf(E value);
