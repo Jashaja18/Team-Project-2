@@ -12,6 +12,13 @@ public class ListClient {
     	
     	// ArrayList testing
         ArrayList<Integer> testArray = new ArrayList<Integer>();
+     // add random numbers
+    	testArray.add(5);
+        testArray.add(76);
+        testArray.add(-32);
+        testArray.add(0);
+        testArray.add(3244523);
+        testArray.add(342);
 
         System.out.println("*Arraylist");
         testList(testArray);
@@ -19,20 +26,20 @@ public class ListClient {
         // LinkedList testing
         LinkedList<Integer> testList = new LinkedList<Integer>();
         
+     // add random numbers
+    	testList.add(532);
+        testList.add(8);
+        testList.add(645);
+        testList.add(-65);
+        testList.add(3);
+        testList.add(0);
+        
         System.out.println("*LinkedList");
         testList(testList);
     }
     
     // tests functionality of shared methods
     public static void testList(AbstractList<Integer> test) {
-    	
-    	// add random numbers
-    	test.add(5);
-        test.add(76);
-        test.add(-32);
-        test.add(0);
-        test.add(3244523);
-        test.add(342);
         
     	System.out.println("Test List (Initial State): " + test);
         System.out.println("size() test: " + test.size());
@@ -49,5 +56,6 @@ public class ListClient {
         System.out.println("Test List (after clear()): " + test);
         System.out.println();
     }
+
 
 }
