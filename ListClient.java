@@ -1,4 +1,3 @@
-
 /*
  * Group 4
  * Mar 1 2021
@@ -8,14 +7,15 @@
  */
 
 public class ListClient {
+	
     public static void main(String[] args) {
     	
-    	// test arraylist for addAll()
-    	
+    	// test Arraylist for addAll()
     	
     	// ArrayList testing
         ArrayList<Integer> testArray = new ArrayList<Integer>();
-     // add random numbers
+        
+        // add random numbers
     	testArray.add(5);
         testArray.add(76);
         testArray.add(-32);
@@ -23,13 +23,14 @@ public class ListClient {
         testArray.add(3244523);
         testArray.add(342);
 
-        System.out.println("*Arraylist");
+        System.out.println("******Arraylist******");
+        System.out.println();
         testList(testArray);
         
         // LinkedList testing
         LinkedList<Integer> testList = new LinkedList<Integer>();
         
-     // add random numbers
+        // add random numbers
     	testList.add(532);
         testList.add(8);
         testList.add(645);
@@ -37,7 +38,8 @@ public class ListClient {
         testList.add(3);
         testList.add(0);
         
-        System.out.println("*LinkedList");
+        System.out.println("\n******LinkedList******");
+        System.out.println();
         testList(testList);
     }
     
@@ -68,5 +70,4 @@ public class ListClient {
         
         System.out.println();
     }
-
 }
