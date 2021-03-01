@@ -20,7 +20,7 @@ public class ListClient {
         testArray.add(76);
         testArray.add(-32);
         testArray.add(0);
-        testArray.add(3244523);
+        testArray.add(324);
         testArray.add(342);
 
         System.out.println("******Arraylist******");
@@ -67,7 +67,5 @@ public class ListClient {
         test.addAll(temp);
         System.out.println("temp: " + temp);
         System.out.println("Test List (after addAll(temp)): " + test);
-        
-        System.out.println();
     }
 }
