@@ -1,9 +1,8 @@
-/*
- * Group 4
- * Mar 1 2021
- * CS 211
- * Team Project 2
- * This is the Abstract class with the mixed duplicates from the ArrayList and LinkedList
+/* Group #4, CS211, 3/1/21, Team Project #2
+ * Jashanpreet, Thais, Shreya, Brandon, Doris, Ace
+ * This is the AbstractList class with the mixed duplicates from both the ArrayList and LinkedList.
+ * This program also uses iterators wherever possible to ensure that the 
+ * implementation is efficient for both the ArrayList and LinkedList.
  */
 
 import java.util.*;
@@ -104,7 +103,7 @@ public abstract class AbstractList<E> implements List<E>
 		// checks index
 		checkIndex(index);
 
-		// decalre iterator
+		// declare iterator
 		Iterator<E> list = iterator();
 
 		E num = null;
@@ -130,6 +129,7 @@ public abstract class AbstractList<E> implements List<E>
 		for (int i = 0; i < size; i++)
 		{
 			iter.next();
+			
 			// checks if the next index = the index passed to the method
 			if (index == i)
 			{
@@ -161,6 +161,8 @@ public abstract class AbstractList<E> implements List<E>
 
 	}
 
-	// this abstract method allows the iterator to allow the caller to remove elements from the collection
+	/* this abstract method allows the iterator to allow the caller 
+	 * to remove elements from the collection
+	 */
 	public abstract Iterator<E> iterator();
 }
