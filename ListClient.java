@@ -9,10 +9,8 @@ public class ListClient {
     	
     	// test ArrayList for addAll()
     	
-    	// ArrayList testing
+        // creating ArrayList for testing
         ArrayList<Integer> testArray = new ArrayList<Integer>();
-        
-        // add random numbers
     	testArray.add(5);
         testArray.add(76);
         testArray.add(-32);
@@ -20,14 +18,12 @@ public class ListClient {
         testArray.add(324);
         testArray.add(342);
 
-        System.out.println("******ArrayList******");
+        System.out.println("******ArrayList******"); // identifying what is being tested
         System.out.println(); // empty print statement to add a space between the outputs
-        testList(testArray);
+        testList(testArray); // calls testList method to test all methods
         
-        // LinkedList testing
+        // creating LinkedList for testing
         LinkedList<Integer> testList = new LinkedList<Integer>();
-        
-        // add random numbers
     	testList.add(532);
         testList.add(8);
         testList.add(645);
@@ -35,30 +31,31 @@ public class ListClient {
         testList.add(3);
         testList.add(0);
         
-        System.out.println("\n******LinkedList******");
-        System.out.println();
-        testList(testList);
+        System.out.println("\n******LinkedList******"); // identifying what is being tested
+        System.out.println(); // empty print statement to add a space between the outputs
+        testList(testList); // calls testList method to test all methods
     }
     
     // tests functionality of shared methods
     public static void testList(AbstractList<Integer> test) {
         
+        // printing out the initial list
     	System.out.println("Test List (Initial State): " + test);
+        // testing different methods
         System.out.println("size() test: " + test.size());
         System.out.println("isEmpty test: " + test.isEmpty());
         System.out.println("get(4) test: " + test.get(4));
         
+        // adding and remocing numbers from the list
         test.remove(4);
         System.out.println("Test List (after remove(4): " + test);
-        
         test.add(3, 69);
         System.out.println("Test List (after add(3, 69): " + test);
-        
         test.clear();
         System.out.println("Test List (after clear()): " + test);
         
+        // additional list to call final method
         ArrayList<Integer> temp = new ArrayList<Integer>();
-        
         temp.add(1);
         temp.add(2);
         temp.add(3);
